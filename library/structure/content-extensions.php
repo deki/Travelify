@@ -771,6 +771,8 @@ function travelify_next_previous() {
 /****************************************************************************************/
 
 add_action( 'travelify_after_post_content', 'travelify_next_previous_post_link', 10 );
+
+if ( ! function_exists( 'travelify_next_previous_post_link' ) ) :
 /**
  * Shows the next or previous posts link with respective names.
  */
@@ -794,6 +796,8 @@ function travelify_next_previous_post_link() {
 		}
 	}
 }
+
+endif;
 
 /****************************************************************************************/
 
